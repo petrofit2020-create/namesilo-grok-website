@@ -1,0 +1,11 @@
+---
+deployment:
+  tasks:
+    # Deploy PETROFIT site (root files) to petrofitusa.com Document Root
+    - export PETROFIT_PATH=/home/USERNAME/public_html
+    - /bin/cp -f index.html $PETROFIT_PATH/
+    - /bin/cp -f bedding.html biomass.html cat-litter.html contact.html fibers.html horticulture.html pellets.html pine-bark.html syp-lumber.html timber.html wood-flour.html $PETROFIT_PATH/
+    # Deploy MIMA site to mimaswisslogistics.com Document Root
+    - export MIMA_PATH=/home/USERNAME/public_html/mimaswisslogistics.com
+    - /bin/mkdir -p $MIMA_PATH
+    - /bin/cp -f mima/index.html mima/about.html mima/services.html mima/contact.html $MIMA_PATH/
