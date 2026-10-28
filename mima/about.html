@@ -5,20 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About | MIMA SWISS LLC</title>
 <style>
-body { font-family: system-ui, sans-serif; background: #f8fafc; color: #1e293b; line-height: 1.6; margin: 0; }
-header { background: #0a2540; color: white; padding: 1rem 2rem; }
+:root { --navy: #0a2540; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; background: #f8fafc; color: #1e293b; line-height: 1.6; }
+header { background: var(--navy); color: white; padding: 1rem 0; }
+nav { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 1.5rem; }
+.logo { font-size: 1.4rem; font-weight: 700; }
+.nav-links a { color: white; text-decoration: none; margin-left: 1.5rem; }
 .container { max-width: 800px; margin: 0 auto; padding: 3rem 2rem; }
-h1 { color: #0a2540; }
-footer { background: #0a2540; color: #cbd5e1; text-align: center; padding: 2rem; }
+h1 { color: var(--navy); }
+footer { background: var(--navy); color: #cbd5e1; text-align: center; padding: 2rem; }
 </style>
 </head>
 <body>
-<header><strong>MIMA SWISS LLC</strong></header>
+<header>
+<nav>
+<div class="logo">MIMA SWISS LLC</div>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+</header>
 <div class="container">
   <h1>About Us</h1>
   <p>MIMA SWISS LLC provides professional logistics and transportation services based in the UAE. We specialize in reliable freight solutions for businesses of all sizes.</p>
-  <p>Phone: +971 65 227 809</p>
+  <p>Phone: <a href="tel:+97165227809">+971 65 227 809</a></p>
 </div>
-<footer>&copy; 2026 MIMA SWISS LLC</footer>
+<footer>&copy; 2026 MIMA SWISS LLC • <a href="tel:+97165227809" style="color:#cbd5e1;">+971 65 227 809</a></footer>
 </body>
 </html>
