@@ -1,10 +1,10 @@
 ---
 deployment:
   tasks:
-    # Deploy PETROFIT site (root files) to petrofitusa.com Document Root
+    # Deploy elegant PETROFIT site to petrofitusa.com Document Root
     - export PETROFIT_PATH=/home/petr02987387/public_html
-    - /bin/cp -f index.html $PETROFIT_PATH/
-    - /bin/cp -f bedding.html biomass.html cat-litter.html contact.html fibers.html horticulture.html pellets.html pine-bark.html syp-lumber.html timber.html wood-flour.html $PETROFIT_PATH/
+    - /bin/cp -f elegant/index.html $PETROFIT_PATH/
+    - /bin/cp -f elegant/products.html elegant/pellets.html elegant/timber.html elegant/about.html elegant/contact.html elegant/cat-litter.html $PETROFIT_PATH/
     # Deploy MIMA site to mimaswisslogistics.com Document Root
     - export MIMA_PATH=/home/petr02987387/public_html/mimaswisslogistics.com
     - /bin/mkdir -p $MIMA_PATH
